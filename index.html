@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+
+    <!-- Icono y titulo -->
+    <title>Team Panda</title>
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class="hero">
+        <div class="hero__container container">
+            <div class="hero__textsContainer">
+                <h1 class="hero__title">
+                    Generador de ondas anti-serpientes
+                </h1>
+                <div class="hero__paragraphs">
+                    <p>El generador de ondas anti-serpientes (G.O.A-S), es un sistema repelente para serpientes
+                        enfocados
+                        para zonas rurales.</p>
+                    <p>G.O.A-S funciona con un motor de vibraciones alimentado por celdas fotovoltaicas,
+                        es decir energia solar.</p>
+                </div>
+                <a class="hero__cta" href="#">Ir a Patreon</a>
+            </div>
+
+            <model-viewer class="Goas__img" src="./assets/models/GOAS.glb" ar ar-modes="webxr scene-viewer quick-look"
+                camera-controls poster="poster.webp" shadow-intensity="1" autoplay>
+                <div class="progress-bar hide" slot="progress-bar">
+                    <div class="update-bar"></div>
+                </div>
+                <button slot="ar-button" id="ar-button">
+        </div>
+    </header>
+
+    <nav id="nav" class="nav">
+        <ul class="nav__links">
+            <li><a class="nav__link" href="#">Inicio</a></li>
+            <li><a class="nav__link" href="#">¿Por que es una propuesta ecológica?</a></li>
+            <li><a class="nav__link" href="#">¿Que beneficios traera?</a></li>
+            <li><a class="nav__link" href="#">Acerca de nosotros</a></li>
+        </ul>
+
+        <a href="#">
+            <img class="nav__close" src="./assets/Icons/close_icon.svg" alt="close menu" srcset="">
+        </a>
+    </nav>
+
+    <div class="open__container">
+        <a href="#nav" class="logo__container nav__open">
+            <img src="./assets/Panda logo.png" alt="Grupo Panda - Logo">
+        </a>
+        <h2 class="logo__text">Team Panda</h2>
+    </div>
+
+    <!-- <main class="main">
+        <section class="video__container container">
+            <video src="./assets/Equipo Los Pandas.mp4" class="video" autoplay="true" onblur="" id="myVideo"></video>
+        </section>
+        <section class="vExplication__container container"></section>
+    </main>
+
+    <footer class="footer"></footer> -->
+
+    <script src="./js/dev/app.dev.js"></script>
+    <!-- <script src="./js/build/app.build.js "></script> -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+</body>
+
+</html>
